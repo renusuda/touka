@@ -15,11 +15,21 @@ class HeroText extends StatelessWidget {
             height: 1.4,
           ),
         ),
-        Text(
-          'もっと面白い何かに',
-          style: Theme.of(context).textTheme.displaySmall?.copyWith(
-            fontWeight: FontWeight.w900,
-            height: 1.4,
+        ShaderMask(
+          shaderCallback: (bounds) => const LinearGradient(
+            colors: [
+              Color(0xFF818CF8),
+              Color(0xFFC084FC),
+              Color(0xFFFB7185),
+            ],
+          ).createShader(bounds),
+          child: Text(
+            'もっと面白い何かに',
+            style: Theme.of(context).textTheme.displaySmall?.copyWith(
+              fontWeight: FontWeight.w900,
+              height: 1.4,
+              color: Colors.white,
+            ),
           ),
         ),
         Text(
