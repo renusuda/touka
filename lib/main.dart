@@ -4,9 +4,7 @@ void main() {
   runApp(const MyApp());
 }
 
-/// The root application widget.
 class MyApp extends StatelessWidget {
-  /// Creates the root application widget.
   const MyApp({super.key});
 
   @override
@@ -23,9 +21,7 @@ class MyApp extends StatelessWidget {
   }
 }
 
-/// The home screen.
 class HomeScreen extends StatelessWidget {
-  /// Creates the home screen.
   const HomeScreen({super.key});
 
   @override
