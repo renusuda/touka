@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:touka/widgets/hero_text.dart';
 
 void main() {
   runApp(const MyApp());
@@ -26,6 +27,13 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold();
+    return const Scaffold(
+      body: SafeArea(
+        child: Padding(
+          padding: EdgeInsets.only(left: 36, top: 48),
+          child: HeroText(),
+        ),
+      ),
+    );
   }
 }
