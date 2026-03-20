@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class HeroText extends StatelessWidget {
   const HeroText({super.key});
@@ -10,7 +11,8 @@ class HeroText extends StatelessWidget {
       children: [
         Text(
           'その確率、',
-          style: Theme.of(context).textTheme.displaySmall?.copyWith(
+          style: GoogleFonts.notoSansJp(
+            fontSize: 36,
             fontWeight: FontWeight.w900,
             height: 1.4,
           ),
@@ -25,7 +27,8 @@ class HeroText extends StatelessWidget {
           ).createShader(bounds),
           child: Text(
             'もっと面白い何かに',
-            style: Theme.of(context).textTheme.displaySmall?.copyWith(
+            style: GoogleFonts.notoSansJp(
+              fontSize: 36,
               fontWeight: FontWeight.w900,
               height: 1.4,
               color: Colors.white,
@@ -34,7 +37,8 @@ class HeroText extends StatelessWidget {
         ),
         Text(
           '例えます。',
-          style: Theme.of(context).textTheme.displaySmall?.copyWith(
+          style: GoogleFonts.notoSansJp(
+            fontSize: 36,
             fontWeight: FontWeight.w900,
             height: 1.4,
           ),

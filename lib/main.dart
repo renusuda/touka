@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:touka/widgets/hero_text.dart';
 
 void main() {
@@ -16,6 +17,9 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         brightness: Brightness.dark,
         scaffoldBackgroundColor: const Color(0xFF0F172A),
+        textTheme: GoogleFonts.notoSansJpTextTheme(
+          ThemeData(brightness: Brightness.dark).textTheme,
+        ),
       ),
       home: const HomeScreen(),
     );
