@@ -31,8 +31,18 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      body: SafeArea(
+    return Scaffold(
+      appBar: AppBar(
+        title: Text(
+          'トウカ。',
+          style: GoogleFonts.notoSansJp(
+            fontWeight: FontWeight.w900,
+          ),
+        ),
+        centerTitle: false,
+        backgroundColor: Colors.transparent,
+      ),
+      body: const SafeArea(
         child: Padding(
           padding: EdgeInsets.only(left: 36, top: 48),
           child: HeroText(),
