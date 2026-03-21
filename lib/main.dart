@@ -44,7 +44,7 @@ class HomeScreen extends StatelessWidget {
       ),
       body: const SafeArea(
         child: Padding(
-          padding: EdgeInsets.only(left: 36, top: 48),
+          padding: EdgeInsets.only(left: 18, top: 48),
           child: HeroText(),
         ),
       ),
