@@ -42,10 +42,18 @@ android {
     productFlavors {
         create("dev") {
             dimension = "default"
+            resValue(
+                type = "string",
+                name = "app_name",
+                value = "touka (dev)")
             applicationIdSuffix = ".dev"
         }
         create("prod") {
             dimension = "default"
+            resValue(
+                type = "string",
+                name = "app_name",
+                value = "touka")
             applicationIdSuffix = ".prod"
         }
     }
