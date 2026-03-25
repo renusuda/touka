@@ -1,4 +1,4 @@
-package com.example.touka
+package com.renusuda.touka
 
 import io.flutter.embedding.android.FlutterActivity
 
