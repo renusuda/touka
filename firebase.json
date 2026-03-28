@@ -1,0 +1,52 @@
+{
+  "flutter": {
+    "platforms": {
+      "android": {
+        "buildConfigurations": {
+          "src/dev": {
+            "projectId": "touka-dev-d5f64",
+            "appId": "1:904272184434:android:704bcdf7dbf711fbb5aeeb",
+            "fileOutput": "android/app/src/dev/google-services.json"
+          },
+          "src/prod": {
+            "projectId": "touka-prod",
+            "appId": "1:814835911976:android:f2100f80647e7dc37b941d",
+            "fileOutput": "android/app/src/prod/google-services.json"
+          }
+        }
+      },
+      "ios": {
+        "buildConfigurations": {
+          "Debug-dev": {
+            "projectId": "touka-dev-d5f64",
+            "appId": "1:904272184434:ios:35ce27007924413eb5aeeb",
+            "uploadDebugSymbols": false,
+            "fileOutput": "ios/flavors/dev/GoogleService-Info.plist"
+          },
+          "Debug-prod": {
+            "projectId": "touka-prod",
+            "appId": "1:814835911976:ios:066b9e55f5f0fc667b941d",
+            "uploadDebugSymbols": false,
+            "fileOutput": "ios/flavors/prod/GoogleService-Info.plist"
+          }
+        }
+      },
+      "dart": {
+        "lib/firebase_options_dev.dart": {
+          "projectId": "touka-dev-d5f64",
+          "configurations": {
+            "android": "1:904272184434:android:704bcdf7dbf711fbb5aeeb",
+            "ios": "1:904272184434:ios:35ce27007924413eb5aeeb"
+          }
+        },
+        "lib/firebase_options_prod.dart": {
+          "projectId": "touka-prod",
+          "configurations": {
+            "android": "1:814835911976:android:f2100f80647e7dc37b941d",
+            "ios": "1:814835911976:ios:066b9e55f5f0fc667b941d"
+          }
+        }
+      }
+    }
+  }
+}
