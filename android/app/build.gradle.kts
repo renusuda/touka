@@ -54,7 +54,6 @@ android {
                 type = "string",
                 name = "app_name",
                 value = "トウカ。")
-            applicationIdSuffix = ".prod"
         }
     }
 }
