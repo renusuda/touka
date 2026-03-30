@@ -1,3 +1,7 @@
+import 'dart:async';
+import 'dart:ui';
+
+import 'package:firebase_crashlytics/firebase_crashlytics.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:touka/firebase.dart';
@@ -6,6 +10,16 @@ import 'package:touka/widgets/hero_text.dart';
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await initializeFirebaseApp();
+
+  FlutterError.onError = FirebaseCrashlytics.instance.recordFlutterFatalError;
+
+  PlatformDispatcher.instance.onError = (error, stack) {
+    unawaited(
+      FirebaseCrashlytics.instance.recordError(error, stack, fatal: true),
+    );
+    return true;
+  };
+
   runApp(const MyApp());
 }
 

@@ -20,13 +20,13 @@
           "Debug-dev": {
             "projectId": "touka-dev-d5f64",
             "appId": "1:904272184434:ios:35ce27007924413eb5aeeb",
-            "uploadDebugSymbols": false,
+            "uploadDebugSymbols": true,
             "fileOutput": "ios/flavors/dev/GoogleService-Info.plist"
           },
           "Debug-prod": {
             "projectId": "touka-prod",
             "appId": "1:814835911976:ios:066b9e55f5f0fc667b941d",
-            "uploadDebugSymbols": false,
+            "uploadDebugSymbols": true,
             "fileOutput": "ios/flavors/prod/GoogleService-Info.plist"
           }
         }
